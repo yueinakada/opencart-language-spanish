@@ -33,6 +33,7 @@ Si ya existe un idioma `es-pe` de otro proveedor, la instalación no lo sustituy
 ## Deshabilitar, reinstalar y retirar
 
 - Para cambiar el idioma predeterminado, utilice la configuración nativa de cada tienda y de la administración.
+- Si seleccionó español mediante el selector de idioma del panel, seleccione también otro idioma allí antes de desinstalarlo. OpenCart considera ese idioma de la sesión al comprobar si permite la desinstalación.
 - Desinstalar **la extensión de idioma** desde **Extensions > Extensions > Languages** deshabilita `es-pe` y conserva su identificador y contenidos. Se bloquea si todavía es el idioma predeterminado de la administración o de alguna tienda.
 - Reinstalarla vuelve a habilitar el mismo registro sin sobrescribir las descripciones que haya editado el comerciante.
 - Para **retirar por completo el paquete**, cambie antes los idiomas predeterminados y elimine expresamente el registro **Español (Perú)** desde **System > Localisation > Languages**. La eliminación nativa de un idioma también elimina su contenido traducido: haga una copia de los contenidos que quiera conservar. Después retire el paquete desde **Extensions > Installer**.

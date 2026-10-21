@@ -101,11 +101,14 @@ assert state['registrations'] == 1
 
 # Guard all stores before the native controller can unregister the extension.
 uninstall_url = 'admin/index.php?route=extension/language.uninstall&extension=' + PACKAGE + '&code=' + PACKAGE + auth
+api('admin/index.php?route=common/language.save' + auth, {'code': 'en-gb', 'redirect': BASE + page})
 fixture('default')
-assert 'error' in api(uninstall_url)
+result = api(uninstall_url)
+assert 'all stores' in result.get('error', ''), result
 assert fixture()['registrations'] == 1
 fixture('clear-default')
-assert 'success' in api(uninstall_url)
+result = api(uninstall_url)
+assert 'success' in result, result
 state = fixture()
 assert state['language']['status'] == 0 and state['products'] > 0 and state['registrations'] == 0
 remove_package = 'admin/index.php?route=marketplace/installer.uninstall&extension_install_id=' + str(package_id) + auth
@@ -113,5 +116,13 @@ assert 'error' in api(remove_package)
 assert fixture()['guards'] == 2
 assert 'success' in api(install_url)
 assert fixture()['language']['language_id'] == language_id
+
+# Removing the package is allowed only after an explicit language-record removal.
+assert 'success' in api(uninstall_url)
+fixture('remove-record')
+result = api(remove_package)
+assert 'success' in result, result
+assert fixture()['guards'] == 0
+assert not Path(STORE, 'extension', PACKAGE).exists()
 
 print('Native ZIP installer, language activation, admin/storefront/default extensions, content preservation, reinstall and uninstall guards: PASS')
