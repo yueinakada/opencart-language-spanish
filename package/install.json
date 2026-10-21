@@ -1,0 +1,8 @@
+{
+  "name": "Español de Perú para OpenCart",
+  "description": "Paquete de idioma es-pe para la administración, la tienda y las extensiones nativas de OpenCart 4.1.0.4.",
+  "code": "yuei_spanish_pe",
+  "version": "0.1.0",
+  "author": "Yuei; traducción base de Burbuja",
+  "link": "https://github.com/yueinakada/opencart-language-spanish"
+}

@@ -1,0 +1,32 @@
+<?php
+
+$_['heading_title'] = 'Su información de afiliado';
+$_['text_account'] = 'Cuenta';
+$_['text_affiliate'] = 'Afiliados';
+$_['text_my_affiliate'] = 'Mi cuenta de afiliado';
+$_['text_payment'] = 'Información de pago';
+$_['text_cheque'] = 'Cheque';
+$_['text_paypal'] = 'PayPal';
+$_['text_bank'] = 'Transferencia bancaria';
+$_['text_success'] = 'Éxito: ¡Se ha actualizado exitosamente su cuenta de afiliado!';
+$_['text_agree'] = 'He leído y estoy de acuerdo con los <a href="%s" class="modal-link"><b>%s</b></a>';
+$_['entry_company'] = 'Empresa';
+$_['entry_website'] = 'Sitio web';
+$_['entry_tax'] = 'ID de impuesto';
+$_['entry_payment_method'] = 'Método de pago';
+$_['entry_cheque'] = 'Nombre de pagador de cheque';
+$_['entry_paypal'] = 'Cuenta de correo electrónico en PayPal';
+$_['entry_bank_name'] = 'Nombre de banco';
+$_['entry_bank_branch_number'] = 'Número ABA o BSB (número de la sucursal)';
+$_['entry_bank_swift_code'] = 'Código SWIFT';
+$_['entry_bank_account_name'] = 'Nombre de cuenta';
+$_['entry_bank_account_number'] = 'Número de cuenta';
+$_['error_token'] = 'Aviso: ¡El token de afiliado no es válido!';
+$_['error_agree'] = 'Aviso: ¡Debe estar de acuerdo con el %s!';
+$_['error_payment_method'] = '¡Se requiere el método de pago!';
+$_['error_cheque'] = '¡Se requiere el nombre del pagador del cheque!';
+$_['error_paypal'] = '¡La dirección de correo electrónico de PayPal no parece ser válida!';
+$_['error_bank_account_name'] = '¡Se requiere el nombre de cuenta!';
+$_['error_bank_account_number'] = '¡Se requiere el número de la cuenta!';
+$_['error_custom_field'] = '¡Se requiere %s!';
+$_['error_regex'] = '¡%s no es una entrada válida!';

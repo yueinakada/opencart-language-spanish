@@ -1,0 +1,17 @@
+{
+  "opencart": {
+    "repository": "opencart/opencart",
+    "version": "4.1.0.4",
+    "commit": "3b0597ec91cae3de040a63fee3834a6d910372ea"
+  },
+  "translation": {
+    "repository": "burbuja/opencart-spanish",
+    "version": "4.1.0.4+bbj1",
+    "commit": "ee7d083e13f22e4b26cdfd5eed52a6ba9c9c4897",
+    "source_locale": "es-cl",
+    "license": "GPL-3.0-only"
+  },
+  "locale": "es-pe",
+  "package": "yuei_spanish_pe",
+  "version": "0.1.0"
+}

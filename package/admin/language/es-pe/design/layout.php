@@ -1,0 +1,30 @@
+<?php
+
+$_['heading_title'] = 'Disposiciones';
+$_['text_success'] = 'Éxito: ¡Ha modificado las disposiciones!';
+$_['text_list'] = 'Lista de disposiciones';
+$_['text_add'] = 'Agregar disposición';
+$_['text_edit'] = 'Editar disposición';
+$_['text_remove'] = 'Eliminar';
+$_['text_route'] = 'Elija la tienda y las rutas a ser usadas por esta disposición';
+$_['text_module'] = 'Elija la posición de los módulos';
+$_['text_default'] = 'Predeterminado';
+$_['text_content_top'] = 'Cabecera del contenido';
+$_['text_content_bottom'] = 'Pie de página del contenido';
+$_['text_column_left'] = 'Columna izquierda';
+$_['text_column_right'] = 'Columna derecha';
+$_['column_name'] = 'Nombre de disposición';
+$_['column_action'] = 'Acción';
+$_['entry_name'] = 'Nombre de disposición';
+$_['entry_store'] = 'Tienda';
+$_['entry_route'] = 'Ruta';
+$_['error_permission'] = 'Aviso: ¡No tiene permiso para modificar las disposiciones!';
+$_['error_name'] = '¡El nombre de disposición debe tener entre 3 y 64 caracteres!';
+$_['error_default'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada como la disposición predeterminada de la tienda!';
+$_['error_store'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s tiendas!';
+$_['error_product'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s productos!';
+$_['error_category'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s categorías!';
+$_['error_manufacturer'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s fabricantes!';
+$_['error_information'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s páginas de información!';
+$_['error_article'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s páginas de artículos!';
+$_['error_topic'] = 'Aviso: ¡No se puede eliminar esta disposición debido a que se encuentra asignada a %s páginas de temas!';

@@ -1,0 +1,33 @@
+<?php
+
+$_['heading_title'] = 'Registrar una cuenta';
+$_['text_account'] = 'Cuenta';
+$_['text_register'] = 'Registro';
+$_['text_account_already'] = 'Si ya tiene una cuenta con nosotros, por favor inicie sesión en la <a href="%s">página de inicio de sesión</a>.';
+$_['text_your_details'] = 'Sus detalles personales';
+$_['text_newsletter'] = 'Boletín informativo';
+$_['text_your_password'] = 'Su contraseña';
+$_['text_agree'] = 'He leído y estoy de acuerdo con los <a href="%s" class="modal-link"><b>%s</b></a>';
+$_['entry_customer_group'] = 'Grupo de clientes';
+$_['entry_firstname'] = 'Nombre';
+$_['entry_lastname'] = 'Apellidos';
+$_['entry_email'] = 'Correo electrónico';
+$_['entry_telephone'] = 'Teléfono';
+$_['entry_newsletter'] = 'Suscribir';
+$_['entry_password'] = 'Contraseña';
+$_['error_token'] = 'Aviso: ¡El token de registro no es válido!';
+$_['error_exists'] = 'Aviso: ¡La dirección de correo electrónico ya está registrada!';
+$_['error_customer_group'] = '¡El grupo de clientes no parece ser válido!';
+$_['error_firstname'] = '¡El nombre debe tener entre 1 y 32 caracteres!';
+$_['error_lastname'] = '¡Los apellidos deben tener entre 1 y 32 caracteres!';
+$_['error_email'] = '¡La dirección de correo electrónico no parece ser válida!';
+$_['error_telephone'] = '¡El teléfono debe tener entre 3 y 32 caracteres!';
+$_['error_custom_field'] = '¡Se requiere %s!';
+$_['error_regex'] = '¡%s no es una entrada válida!';
+$_['error_password'] = '¡La contraseña debe contener una %s y tener entre %d y 40 caracteres!';
+$_['error_password_uppercase'] = 'mayúscula';
+$_['error_password_lowercase'] = 'minúscula';
+$_['error_password_number'] = 'número';
+$_['error_password_symbol'] = 'símbolo';
+$_['error_password_length'] = '¡La contraseña debe tener entre %d y 40 caracteres!';
+$_['error_agree'] = 'Aviso: ¡Debe estar de acuerdo con el %s!';

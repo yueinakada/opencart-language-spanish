@@ -1,0 +1,30 @@
+<?php
+
+$_['heading_title'] = 'Divisas';
+$_['text_success'] = 'Éxito: ¡Ha modificado las divisas!';
+$_['text_list'] = 'Lista de divisas';
+$_['text_add'] = 'Agregar divisa';
+$_['text_edit'] = 'Editar divisa';
+$_['text_iso'] = 'Puede encontrar una lista completa de códigos de divisas y preferencias <a href="http://www.xe.com/iso4217.php" target="_blank" class="alert-link">aquí</a>.';
+$_['column_title'] = 'Título de divisa';
+$_['column_code'] = 'Código';
+$_['column_value'] = 'Valor';
+$_['column_status'] = 'Estado';
+$_['column_date_modified'] = 'Última actualización';
+$_['column_action'] = 'Acción';
+$_['entry_title'] = 'Título de divisa';
+$_['entry_code'] = 'Código';
+$_['entry_value'] = 'Valor';
+$_['entry_symbol_left'] = 'Símbolo a la izquierda';
+$_['entry_symbol_right'] = 'Símbolo a la derecha';
+$_['entry_decimal_place'] = 'Digitos decimales';
+$_['entry_status'] = 'Estado';
+$_['help_code'] = 'No lo cambies si esta es su divisa predeterminada.';
+$_['help_value'] = 'El valor de su divisa predeterminada en la actual unidad de divisas. Establécelo en 1 para su divisa predeterminada.';
+$_['error_permission'] = 'Aviso: ¡No tiene permiso para modificar las divisas!';
+$_['error_extension'] = 'Aviso: ¡No se pudo encontrar la extensión de divisas!';
+$_['error_title'] = '¡El título de divisa debe tener entre 3 y 32 caracteres!';
+$_['error_code'] = '¡El código de la divisa debe tener 3 caracteres!';
+$_['error_default'] = 'Aviso: ¡Esta divisa no se puede eliminar debido a que se encuentra asignada como la divisa de la tienda predeterminada!';
+$_['error_store'] = 'Aviso: ¡No se puede eliminar esta divisa debido a que se encuentra asignada a %s tiendas!';
+$_['error_order'] = 'Aviso: ¡No se puede eliminar esta divisa debido a que se encuentra asignada a %s pedidos!';

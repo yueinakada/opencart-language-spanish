@@ -1,0 +1,23 @@
+Español de Perú para OpenCart
+
+La traducción de interfaz está basada en burbuja/opencart-spanish,
+versión 4.1.0.4+bbj1, commit ee7d083e13f22e4b26cdfd5eed52a6ba9c9c4897.
+Proyecto original: https://github.com/burbuja/opencart-spanish
+Autores de la traducción base: Burbuja y sus colaboradores.
+Licencia original: GNU General Public License, versión 3 (GPLv3).
+
+Adaptación de Yuei, 2026:
+- Identidad regional es-pe y bandera de Perú.
+- Separadores numéricos y formatos de fecha para Perú.
+- Tratamiento formal, terminología y correcciones de traducción.
+- Distribución autónoma en extension/yuei_spanish_pe.
+- Instalación transaccional, conservación de contenidos y pruebas automatizadas.
+
+Las claves, textos fuente de referencia y estructura de integración corresponden
+a OpenCart 4.1.0.4, commit 3b0597ec91cae3de040a63fee3834a6d910372ea.
+OpenCart es obra de OpenCart Ltd. y sus colaboradores y se distribuye bajo GPLv3.
+Proyecto original: https://github.com/opencart/opencart
+
+Se conserva la atribución en este aviso y en el código fuente. No se afirma
+autoría exclusiva sobre la traducción base ni afiliación oficial con OpenCart.
+Véase LICENSE para el texto completo de GNU GPL versión 3.
