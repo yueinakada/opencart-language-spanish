@@ -1,0 +1,33 @@
+<?php
+
+$_['heading_title'] = 'Seguimiento de mercadeo';
+$_['text_success'] = 'Éxito: ¡Ha modificado el seguimiento de mercadeo!';
+$_['text_list'] = 'Lista de seguimiento de mercadeo';
+$_['text_add'] = 'Agregar seguimiento de mercadeo';
+$_['text_edit'] = 'Editar seguimiento de mercadeo';
+$_['text_filter'] = 'Filtrar';
+$_['text_history'] = 'Historial';
+$_['text_history_add'] = 'Agregar historial';
+$_['text_report'] = 'Informes';
+$_['column_name'] = 'Nombre de campaña';
+$_['column_code'] = 'Código';
+$_['column_clicks'] = 'Clics';
+$_['column_orders'] = 'Pedidos';
+$_['column_ip'] = 'IP';
+$_['column_account'] = 'Cuentas';
+$_['column_store'] = 'Tienda';
+$_['column_country'] = 'País';
+$_['column_date_added'] = 'Fecha de alta';
+$_['column_action'] = 'Acción';
+$_['entry_name'] = 'Nombre de campaña';
+$_['entry_description'] = 'Descripción de la campaña';
+$_['entry_code'] = 'Código de seguimiento';
+$_['entry_example'] = 'Ejemplos';
+$_['entry_date_from'] = 'Fecha de inicio';
+$_['entry_date_to'] = 'Fecha de fin';
+$_['help_code'] = 'El código de seguimiento que se usará para seguir las campañas de mercadeo.';
+$_['help_example'] = 'Así el sistema puede hacer seguimiento de los referidos a los que necesites agregar el código de seguimiento al final de la URL enlazando a su sitio.';
+$_['error_permission'] = 'Aviso: ¡No tiene permiso para modificar el seguimiento de mercadeo!';
+$_['error_name'] = '¡La campaña debe tener entre 1 y 32 caracteres!';
+$_['error_code'] = '¡Se requiere el código de seguimiento!';
+$_['error_exists'] = '¡El código de seguimiento se usa en otra campaña!';

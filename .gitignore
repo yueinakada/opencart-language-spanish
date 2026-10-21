@@ -1,0 +1,6 @@
+/dist/
+/.opencart/
+__pycache__/
+*.pyc
+*.log
+.env

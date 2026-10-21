@@ -1,0 +1,21 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header"><div class="container-fluid">
+    <div class="float-end"><a href="{{ back|e('html_attr') }}" class="btn btn-light">{{ button_back }}</a></div>
+    <h1>{{ heading_title }}</h1>
+  </div></div>
+  <div class="container-fluid">
+    <section class="card">
+      <div class="card-header">{{ text_title }}</div>
+      <div class="card-body">
+        <p>{{ text_description }}</p>
+        <p>{{ text_activation }}</p>
+        <p>{{ text_content }}</p>
+        <p class="alert alert-info">{{ text_uninstall }}</p>
+        <a href="{{ languages|e('html_attr') }}" class="btn btn-primary">{{ button_languages }}</a>
+        <a href="{{ settings|e('html_attr') }}" class="btn btn-light">{{ button_settings }}</a>
+      </div>
+    </section>
+  </div>
+</div>
+{{ footer }}

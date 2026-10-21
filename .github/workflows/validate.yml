@@ -1,0 +1,61 @@
+name: Validate Spanish language pack
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    services:
+      mariadb:
+        image: mariadb:12.0
+        env:
+          MARIADB_ROOT_PASSWORD: test
+          MARIADB_DATABASE: spanish_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=5s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: opencart/opencart
+          ref: 3b0597ec91cae3de040a63fee3834a6d910372ea
+          path: .opencart
+          persist-credentials: false
+      - name: PHP syntax
+        run: find package tests -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Reference coverage and placeholders
+        run: php tests/translations.php .opencart
+      - name: Build package
+        run: python3 scripts/build.py
+      - name: Install disposable OpenCart 4.1.0.4
+        run: |
+          cp .opencart/upload/config-dist.php .opencart/upload/config.php
+          cp .opencart/upload/admin/config-dist.php .opencart/upload/admin/config.php
+          php .opencart/upload/install/cli_install.php install --username admin --email test@example.org --password LanguageTest12345 --http_server http://127.0.0.1:8080/ --language en-gb --db_driver mysqli --db_hostname 127.0.0.1 --db_username root --db_password test --db_database spanish_test --db_port 3306 --db_prefix lang_
+      - name: Start temporary store
+        run: |
+          php -S 127.0.0.1:8080 -t .opencart/upload > /tmp/spanish-http.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --silent --output /dev/null http://127.0.0.1:8080/; then break; fi
+            sleep 1
+          done
+      - name: Native installer and language integration
+        run: python3 tests/http.py .opencart/upload
+      - name: Integration diagnostics
+        if: failure()
+        run: |
+          if [ -f /tmp/spanish-http.log ]; then tail -n 80 /tmp/spanish-http.log; fi
+          if [ -f .opencart/upload/system/storage/logs/error.log ]; then tail -n 40 .opencart/upload/system/storage/logs/error.log; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: spanish-peru-0.1.0
+          path: dist/
+          retention-days: 30
