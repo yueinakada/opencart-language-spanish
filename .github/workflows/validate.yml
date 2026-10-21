@@ -48,7 +48,7 @@ jobs:
             sleep 1
           done
       - name: Native installer and language integration
-        run: python3 tests/http.py .opencart/upload
+        run: python3 tests/integration.py .opencart/upload
       - name: Integration diagnostics
         if: failure()
         run: |
